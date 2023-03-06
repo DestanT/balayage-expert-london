@@ -20,11 +20,42 @@ header {
     border: 1px solid black;
 }
 
+nav {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    word-spacing: 10px;
+}
+
 nav li {
     list-style-type: none;
+    text-align: start;
+    display: inline-block;
 }
 
 nav a {
     text-decoration: none;
     color: inherit;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #6A6058;
+    color: #6A6058;
+    font-weight: bolder;
+}
+
+/* Hero image & Site landing*/
+
+.landing-page {
+    margin: 10px;
+    border: 1px solid black;
+}
+
+/* Media queries */
+
+/* Mobiles & small devices */
+
+@media screen and (max-width: 480px) {
+    #hero-image {
+        width: 100%;
+    }
 }
