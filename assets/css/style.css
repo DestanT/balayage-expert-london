@@ -1,3 +1,7 @@
-h1 {
-    background-color: red;
+/* Idea for this snippet of code came from the "Love Running" project, I liked the idea of having full control of these parameters later */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
