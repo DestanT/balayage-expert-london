@@ -6,4 +6,25 @@
     padding: 0;
 }
 
-nav 
+body {
+    background-color: #6A6058;
+    color: #251E2D;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color: #A5978A;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
