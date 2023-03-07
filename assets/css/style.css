@@ -89,15 +89,15 @@ nav a:hover {
     }
 
     #burger-menu-checkbox {
-        display: flex;
+        display: none;
         position: absolute;
         top: 50px;
-        right: 30px;
+        right: 10px;
         z-index: 10;
     }
 
     .burger-menu-label {
-        display: flex;
+        display: block;
         position: absolute;
         top: 50px;
         right: 10px;
