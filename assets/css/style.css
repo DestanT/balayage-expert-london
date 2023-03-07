@@ -1,3 +1,6 @@
+
+/* search for testing and change before submitting! */
+
 /* Idea for this snippet of code came from the "Love Running" project, I liked the idea of having full control of these parameters later */
 
 * {
@@ -15,21 +18,39 @@ body {
 
 header {
     background-color: #A5978A;
-    text-align: center;
     margin: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 20px);
+    height: 75px;
+    z-index: 10;
+}
+
+header h1 {
+    /* border: 1px solid black; */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px;
 }
 
 nav {
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     word-spacing: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: calc(100% - 20px);
+    align-items: end;
 }
 
 nav li {
     list-style-type: none;
-    text-align: start;
     display: inline-block;
+    /* border: 1px solid black; */
 }
 
 nav a {
@@ -46,8 +67,11 @@ nav a:hover {
 /* Hero image & Site landing*/
 
 .landing-page {
-    margin: 10px;
+    position: relative;
+    margin: 95px 10px 10px;
     border: 1px solid black;
+    /*take out - testing*/
+    height: 1800px
 }
 
 /* Media queries */
@@ -58,4 +82,31 @@ nav a:hover {
     #hero-image {
         width: 100%;
     }
+
+    header {
+        display: block;
+    }
+
+    header h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav {
+        margin: 0;
+        background-color: inherit;
+        /* change calc values */
+        width: 100%;
+        height: auto;
+        display: block;
+        opacity: 0.9;
+    }
+
+    nav li {
+        display: block;
+        text-align: right;
+        margin: 20px 10px 20px;
+    }
+
+
 }
