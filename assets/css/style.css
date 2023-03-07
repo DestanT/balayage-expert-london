@@ -1,5 +1,7 @@
 /* search for testing and change before submitting! */
 
+/* add cut to the top of nav bar for no overlap */
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
 /* Idea for this snippet of code came from the "Love Running" project, I liked the idea of having full control of these parameters later */
@@ -15,6 +17,11 @@ body {
     color: #251E2D;
     font-family: 'Martel', serif;
 }
+
+h2 {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+} 
 
 /* Navigation Bar */
 
@@ -40,7 +47,6 @@ header {
 }
 
 header img {
-    font-family: 'Lora', serif;
     display: flex;
     height: 100%;
     align-items: center;
@@ -73,7 +79,11 @@ nav a:hover {
     font-weight: bolder;
 }
 
-/* Hero image & Site landing*/
+/* Hero image & First view by user */
+
+#hero-image {
+    margin-bottom: -9px;
+}
 
 .landing-page {
     background-color: #A5978A;
@@ -81,8 +91,23 @@ nav a:hover {
     margin: 100px 10px 10px;
     border: 5px solid #EEDDCA;
     box-sizing: border-box;
-    /*take out - testing*/
-    height: 1800px
+}
+
+/* About section */
+
+.about {
+    background-color: #EBEAE7;
+    height: auto;
+    width: 100%;
+}
+
+.about > h2 {
+    text-align: center;
+}
+
+.about > p {
+    margin: 0 500px;
+    text-align: center;
 }
 
 /* Media queries */
@@ -143,6 +168,11 @@ nav a:hover {
         display: block;
         text-align: right;
         margin: 20px 10px 20px;
+    }
+
+    .about > p {
+        margin: 0 10px;
+        text-align: center;
     }
 
 }
