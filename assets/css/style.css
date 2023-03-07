@@ -39,12 +39,11 @@ header {
     z-index: 10;
 }
 
-header h1 {
+header img {
     font-family: 'Lora', serif;
     display: flex;
     height: 100%;
     align-items: center;
-    margin-left: 10px;
 }
 
 nav {
@@ -104,7 +103,7 @@ nav a:hover {
     .burger-menu-label {
         display: block;
         position: absolute;
-        top: 45px;
+        top: 42px;
         right: 5px;
         z-index: 9;
     }
@@ -117,8 +116,14 @@ nav a:hover {
         display: block;
     }
 
-    header h1 {
-        text-align: center;
+    header > a {
+        pointer-events: none;
+    }
+
+    header img {
+        box-sizing: border-box;
+        width: 90%;
+        height: auto;
         margin: 0;
     }
 
