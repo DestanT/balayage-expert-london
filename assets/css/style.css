@@ -27,7 +27,8 @@ body {
 header {
     background-color: #A5978A;
     margin: 10px;
-    /* border: 1px solid black; */
+    border: 5px solid #EEDDCA;
+    box-sizing: border-box;
     display: flex;
     position: fixed;
     top: 0;
@@ -73,8 +74,9 @@ nav a:hover {
 
 .landing-page {
     position: relative;
-    margin: 95px 10px 10px;
-    border: 1px solid black;
+    margin: 100px 10px 10px;
+    border: 5px solid #EEDDCA;
+    box-sizing: border-box;
     /*take out - testing*/
     height: 1800px
 }
@@ -99,8 +101,8 @@ nav a:hover {
     .burger-menu-label {
         display: block;
         position: absolute;
-        top: 50px;
-        right: 10px;
+        top: 45px;
+        right: 5px;
         z-index: 9;
     }
 
