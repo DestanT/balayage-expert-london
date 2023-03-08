@@ -1,6 +1,6 @@
 /* search for testing and change before submitting! */
 
-/* add cut to the top of nav bar for no overlap OR impelement STICK TO TOP*/
+/* implement nav toggle when clicked in mobile view!! */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
@@ -109,6 +109,12 @@ nav a:hover {
 .about>p {
     margin: 0 500px;
     text-align: center;
+}
+
+/* Services section */
+
+.services {
+    
 }
 
 /* Media queries */
