@@ -1,5 +1,7 @@
 /* search for testing and change before submitting! */
 
+/* ask about absolute positioning to bring text in-front of p element in mobile view - surely theres an easier way! */
+
 /* implement nav toggle when clicked in mobile view!! */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
@@ -96,10 +98,15 @@ nav a:hover {
 /* About section */
 
 .about {
+    position: relative;
     background-color: #EBEAE7;
-    background-image: url(../images/leaf-vector.jpg);
+    background-color: rgba(235, 234, 231, 0.7);
     height: auto;
     width: 100%;
+}
+
+.about>img {
+    position: absolute;
 }
 
 .about>h2 {
@@ -113,9 +120,7 @@ nav a:hover {
 
 /* Services section */
 
-.services {
-    
-}
+.services {}
 
 /* Media queries */
 
@@ -177,13 +182,17 @@ nav a:hover {
         margin: 20px 10px 20px;
     }
 
+    .about>img {
+        visibility: hidden;
+    }
+
     .about {
-        background-image: url(../images/leaf-vector-mobile.jpg);
+        background: rgba(235, 234, 231, 0.7) url(../images/leaf-vector.png) no-repeat left center;
     }
 
     .about>p {
         margin: 0 10px;
         text-align: center;
+        z-index: 20;
     }
-
 }
