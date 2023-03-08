@@ -1,6 +1,6 @@
 /* search for testing and change before submitting! */
 
-/* add cut to the top of nav bar for no overlap */
+/* add cut to the top of nav bar for no overlap OR impelement STICK TO TOP*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
@@ -21,7 +21,7 @@ body {
 h2 {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 2em;
-} 
+}
 
 /* Navigation Bar */
 
@@ -97,15 +97,16 @@ nav a:hover {
 
 .about {
     background-color: #EBEAE7;
+    background-image: url(../images/leaf-vector.jpg);
     height: auto;
     width: 100%;
 }
 
-.about > h2 {
+.about>h2 {
     text-align: center;
 }
 
-.about > p {
+.about>p {
     margin: 0 500px;
     text-align: center;
 }
@@ -135,7 +136,7 @@ nav a:hover {
         z-index: 9;
     }
 
-    #burger-menu-checkbox:checked ~ nav {
+    #burger-menu-checkbox:checked~nav {
         display: block;
     }
 
@@ -143,7 +144,7 @@ nav a:hover {
         display: block;
     }
 
-    header > a {
+    header>a {
         pointer-events: none;
     }
 
@@ -170,7 +171,11 @@ nav a:hover {
         margin: 20px 10px 20px;
     }
 
-    .about > p {
+    .about {
+        background-image: url(../images/leaf-vector-mobile.jpg);
+    }
+
+    .about>p {
         margin: 0 10px;
         text-align: center;
     }
