@@ -4,6 +4,7 @@
 /* clean up code using shorthand where possible and clean */
 /* implement nav toggle when clicked in mobile view!! */
 /* clean up #links in homepage - about isn't levelled correctly */
+/* add aria-labels to everything inlcuding background images in CSS */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
@@ -208,6 +209,34 @@ input {
 #treatments:checked~.cards #treatments-card,
 #ladies:checked~.cards #ladies-card {
     transform: translate3d(0, 0, 0);
+}
+
+/* Footer section */
+
+footer {
+    background-color: #A5978A;
+    margin: 0 10px;
+    border: 5px solid #EEDDCA;
+    box-sizing: border-box;
+    bottom: 0;
+    width: calc(100% - 20px);
+    height: 85px;
+}
+
+footer>div {
+    height: 100%;
+    border: 1px solid black;
+}
+
+.fa-instagram {
+    font-size: 50px;
+    font-weight: 550;
+    color: #251E2D;
+}
+
+.fa-instagram:hover {
+    color: #6A6058;
+    transform: scale(1.2);
 }
 
 /* Media queries */
