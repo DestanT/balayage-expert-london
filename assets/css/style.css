@@ -276,10 +276,6 @@ input {
         z-index: 20;
     }
 
-    .card table {
-        width: 80%;
-    }
-    
     .card td {
         height: 40px;
     }
