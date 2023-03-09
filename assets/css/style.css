@@ -120,6 +120,7 @@ nav a:hover {
 }
 
 /* Services section */
+/* CREDIT - https://www.youtube.com/watch?v=LBAThoUn3rU - The idea came from here, took a lot of work on dev tools to make it work for me though, was a fun nightmare! */
 
 strong,
 em {
@@ -273,5 +274,26 @@ input {
         margin: 0 10px;
         text-align: center;
         z-index: 20;
+    }
+
+    .card table {
+        width: 80%;
+    }
+    
+    .card td {
+        height: 40px;
+    }
+
+    .cards {
+        height: 475px;
+        width: 325px;
+    }
+    
+    .cards label {
+        width: 325px;
+    }
+    
+    .cards .card {
+        height: 475px;
     }
 }
