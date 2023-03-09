@@ -131,6 +131,14 @@ em {
     text-align: center;
 }
 
+#margin-services-ladies {
+    margin-bottom: 40px; /* Push table down in order to center better within its card */
+}
+
+#margin-services-treatments {
+    margin-bottom: 90px; /* Push table down in order to center better within its card */
+}
+
 .card table {
     width: 100%;
 }
