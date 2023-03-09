@@ -34,7 +34,7 @@
         <div class="about">
             <img src="assets/images/leaf-vector.png" alt="Leaf Background Vectors by Vecteezy">
             <br>
-            <h2 id="about"><u>About</u></h2>
+            <h2 id="about">About</h2>
             <br>
             <p>
                 Are you searching for the best hairdresser near you? Look no further!
@@ -72,97 +72,116 @@
             </p>
             <br>
         </div>
-        <div id="services" class="services">
-            <h2 class="ladies-header">Ladies</h2>
-            <table class="ladies-services">
-                <tr>
-                    <th></th>
-                    <th>Short</th>
-                    <th>Medium</th>
-                    <th>Long</th>
-                </tr>
-                <tr>
-                    <td>Blowdry</td>
-                    <td>£22</td>
-                    <td>£24</td>
-                    <td>£27</td>
-                </tr>
-                <tr>
-                    <td>Cut & Blowdry</td>
-                    <td>£50</td>
-                    <td>£55</td>
-                    <td>£55</td>
-                </tr>
-                <tr>
-                    <td>Cut & Go</td>
-                    <td>£40</td>
-                    <td>£45</td>
-                    <td>£45</td>
-                </tr>
-            </table>
-            <h2 class="color-header">Colours</h2>
-            <table class="color-services">
-                <tr>
-                    <th></th>
-                    <th>Short</th>
-                    <th>Medium</th>
-                    <th>Long</th>
-                </tr>
-                <tr>
-                    <td>Root Tint</td>
-                    <td>£65</td>
-                    <td>£65</td>
-                    <td>£65</td>
-                </tr>
-                <tr>
-                    <td>Full Head Tint</td>
-                    <td>£65</td>
-                    <td>£70</td>
-                    <td>£75</td>
-                </tr>
-                <tr>
-                    <td>Highlights (Half)</td>
-                    <td>£90</td>
-                    <td>£95</td>
-                    <td>£100</td>
-                </tr>
-                <tr>
-                    <td>Highlights (Full)</td>
-                    <td>£120</td>
-                    <td>£130</td>
-                    <td>£140</td>
-                </tr>
-                <tr>
-                    <td>Balayage</td>
-                    <td><em>from</em> £220</td>
-                    <td colspan="2"><strong>(Consultation required)</strong></td>
-                </tr>
-                <tr>
-                    <td>Toners</td>
-                    <td>£30</td>
-                    <td>£35</td>
-                    <td>£35</td>
-                </tr>
-                <tr>
-                    <td>Colour Correction</td>
-                    <td colspan="3">Price upon Consultation</td>
-                </tr>
-            </table>
-            <h2 class="treatment-header">Treatments</h2>
-            <table class="treatment-services">
-                <tr>
-                    <td>Keratin Hair Treatment</td>
-                    <td><em>from</em> £165</td>
-                </tr>
-                <tr>
-                    <td>Kérastase Hair Mask</td>
-                    <td>£15</td>
-                </tr>
-                <tr>
-                    <td>Olaplex Treatment</td>
-                    <td>£25</td>
-                </tr>
-            </table>
+        <div id="services" class="services-container">
+            <input type="radio" name="price-list" id="colors" checked>
+            <input type="radio" name="price-list" id="ladies">
+            <input type="radio" name="price-list" id="treatments">
+
+            <div class="cards">
+                <label for="colors" id="colors-card">
+                    <div class="card">
+                        <table>
+                            <h2>Colours</h2>
+                            <tr>
+                                <th></th>
+                                <th>Short</th>
+                                <th>Medium</th>
+                                <th>Long</th>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Root Tint</td>
+                                <td>£65</td>
+                                <td>£65</td>
+                                <td>£65</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Full Head Tint</td>
+                                <td>£65</td>
+                                <td>£70</td>
+                                <td>£75</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Highlights (Half)</td>
+                                <td>£90</td>
+                                <td>£95</td>
+                                <td>£100</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Highlights (Full)</td>
+                                <td>£120</td>
+                                <td>£130</td>
+                                <td>£140</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Balayage</td>
+                                <td colspan="3"><em>from</em> £220<strong> (Consultation required)</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Toners</td>
+                                <td>£30</td>
+                                <td>£35</td>
+                                <td>£35</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Colour Correction</td>
+                                <td colspan="3"><strong>Price upon Consultation</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </label>
+
+                <label for="ladies" id="ladies-card">
+                    <div class="card">
+                        <table>
+                            <h2>Ladies</h2>
+                            <tr>
+                                <th></th>
+                                <th>Short</th>
+                                <th>Medium</th>
+                                <th>Long</th>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Blowdry</td>
+                                <td>£22</td>
+                                <td>£24</td>
+                                <td>£27</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Cut & Blowdry</td>
+                                <td>£50</td>
+                                <td>£55</td>
+                                <td>£55</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Cut & Go</td>
+                                <td>£40</td>
+                                <td>£45</td>
+                                <td>£45</td>
+                            </tr>
+                        </table>
+                    </div>
+                </label>
+
+                <label for="treatments" id="treatments-card">
+                    <div class="card">
+                        <table>
+                            <h2>Treatments</h2>
+                            <tr>
+                                <td class="align-left">Keratin Hair Treatment</td>
+                                <td><em>from</em> £165</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Kérastase Hair Mask</td>
+                                <td>£15</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left">Olaplex Treatment</td>
+                                <td>£25</td>
+                            </tr>
+                        </table>
+                    </div>
+                </label>
+            </div>
         </div>
     </section>
     <footer>

@@ -3,6 +3,7 @@
 /* ask about absolute positioning to bring text in-front of p element in mobile view - surely theres an easier way! */
 /* clean up code using shorthand where possible and clean */
 /* implement nav toggle when clicked in mobile view!! */
+/* clean up #links in homepage - about isn't levelled correctly */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
@@ -22,7 +23,7 @@ body {
 
 h2 {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 /* Navigation Bar */
@@ -120,67 +121,84 @@ nav a:hover {
 
 /* Services section */
 
-.services {
-    position: relative;
+strong,
+em {
+    font-size: 0.7em;
+}
+
+.card>h2 {
+    text-align: center;
+}
+
+.card table {
     width: 100%;
-    height: 750px;
 }
 
-.services>table {
-    width: 500px;
-    height: 500px;
-    border: 10px solid #675447;
-}
-
-.services th {
-    text-decoration: underline;
+.card th {
     width: 50px;
     height: 50px;
 }
 
-.services td {
+.card td {
     height: 50px;
     text-align: center;
+    line-height: 1em;
 }
 
-.ladies-header {
-    position: absolute;
-    top: 7%;
-    left: 7%;
-    text-decoration: underline;
+tr>.align-left {
+    text-align: left;
 }
 
-.ladies-services {
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
+.services-container {
+    display: flex;
+    margin: 25px;
+    justify-content: center;
 }
 
-.color-header {
-    position: absolute;
-    top: 20%;
-    left: 39%;
-    text-decoration: underline;
+.cards {
+    position: relative;
+    height: 525px;
+    width: 400px;
+    perspective: 600px;
+    transform-style: preserve-3d;
 }
 
-.color-services {
+.cards label {
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Stack overflow helped me with centering here */
+    background-color: #A5978A;
+    width: 400px;
+    transition: all 0.7s ease;
 }
 
-.treatment-header {
-    position: absolute;
-    top: 7%;
-    right: 21%;
-    text-decoration: underline;
+.cards .card {
+    position: relative;
+    height: 525px;
+    border: 10px solid #675447;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 25px;
 }
 
-.treatment-services {
-    position: absolute;
-    bottom: 20%;
-    right: 5%;
+input {
+    display: none;
+}
+
+#colors:checked~.cards #treatments-card,
+#treatments:checked~.cards #ladies-card,
+#ladies:checked~.cards #colors-card {
+    transform: translate3d(65%, 0, -80px);
+}
+
+#colors:checked~.cards #ladies-card,
+#treatments:checked~.cards #colors-card,
+#ladies:checked~.cards #treatments-card {
+    transform: translate3d(-65%, 0, -80px);
+}
+
+#colors:checked~.cards #colors-card,
+#treatments:checked~.cards #treatments-card,
+#ladies:checked~.cards #ladies-card {
+    transform: translate3d(0, 0, 0);
 }
 
 /* Media queries */
