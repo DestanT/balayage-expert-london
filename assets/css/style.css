@@ -243,19 +243,26 @@ footer>div {
     display: inline-block;
 }
 
-.fa-instagram {
+#instagram {
     position: absolute;
-    top: 50%;
+    top: 48%; /* odd number; needed adjusting to work with <p> underneath */
     left: 50%;
     transform: translate(-50%, -50%); /* CREDIT - https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ - Saw this use before but opted not to use it as it didn't make sense to me, until this page explained it BEAUTIFULLY! */
     font-size: 50px;
-    font-weight: 550;
     color: #251E2D;
 }
 
-.fa-instagram:hover {
+footer>div>p {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#instagram:hover {
     color: #6A6058;
-    transform: scale(1.2) translate(-50%, -50%); /* Needed to apply the same knowledge here as above - it looked off otherwise */
+    transform: scale(1.1) translate(-50%, -50%); /* Needed to apply the same knowledge here as above - it looked off otherwise */
 }
 
 /* Attributions - very bottom of the page */
@@ -287,7 +294,7 @@ footer>div {
  
 #vecteezy:hover,
 #freepik:hover {
-    color: #6A6058;
+    color: #A5978A;
     font-weight: bolder;
 }
 
