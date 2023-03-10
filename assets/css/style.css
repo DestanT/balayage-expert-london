@@ -86,11 +86,12 @@ nav a:hover {
 /* Hero image & First view by user */
 
 #hero-image {
-    border-radius: 0 50% 0 0; /* Slight colour difference in top right corner was worse - bottom right at least looks like its meant to be - better fix in future! */
+    border-radius: 0 50% 0 0;
+    /* Slight colour difference in top right corner was worse - bottom right at least looks like its meant to be - better fix in future! */
     margin-bottom: -9px;
 }
 
-#hero-text { 
+#hero-text {
     position: absolute;
     top: 10%;
     right: 5%;
@@ -99,8 +100,10 @@ nav a:hover {
     font-weight: 900;
     text-align: center;
     background-image: url(../images/hero-text-background.jpg);
-    color: rgba(0, 0, 0, 0.3); /* Original image too light - this darkens it a bit */
-    -webkit-background-clip: text; /* CREDIT - https://www.youtube.com/watch?v=g6eNK8hxDRI - The idea to use this line of code came from here, it didn't work without */
+    color: rgba(0, 0, 0, 0.3);
+    /* Original image too light - this darkens it a bit */
+    -webkit-background-clip: text;
+    /* CREDIT - https://www.youtube.com/watch?v=g6eNK8hxDRI - The idea to use this line of code came from here, it didn't work without */
 }
 
 .landing-page {
@@ -125,6 +128,13 @@ nav a:hover {
     position: absolute;
 }
 
+#profile-image {
+    max-height: 500px;
+    border: 5px solid #675447;
+    top: 70px;
+    right: 20px;
+}
+
 .about>h2 {
     text-align: center;
 }
@@ -147,11 +157,13 @@ em {
 }
 
 #margin-services-ladies {
-    margin-bottom: 40px; /* Push table down in order to center better within its card */
+    margin-bottom: 40px;
+    /* Push table down in order to center better within its card */
 }
 
 #margin-services-treatments {
-    margin-bottom: 90px; /* Push table down in order to center better within its card */
+    margin-bottom: 90px;
+    /* Push table down in order to center better within its card */
 }
 
 .card table {
@@ -246,9 +258,11 @@ footer>div {
 
 #instagram {
     position: absolute;
-    top: 48%; /* odd number; needed adjusting to work with <p> underneath */
+    top: 48%;
+    /* odd number; needed adjusting to work with <p> underneath */
     left: 50%;
-    transform: translate(-50%, -50%); /* CREDIT - https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ - Saw this use before but opted not to use it as it didn't make sense to me, until this page explained it BEAUTIFULLY! */
+    transform: translate(-50%, -50%);
+    /* CREDIT - https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ - Saw this use before but opted not to use it as it didn't make sense to me, until this page explained it BEAUTIFULLY! */
     font-size: 50px;
     color: #251E2D;
 }
@@ -263,7 +277,8 @@ footer>div>p {
 
 #instagram:hover {
     color: #6A6058;
-    transform: scale(1.1) translate(-50%, -50%); /* Needed to apply the same knowledge here as above - it looked off otherwise */
+    transform: scale(1.1) translate(-50%, -50%);
+    /* Needed to apply the same knowledge here as above - it looked off otherwise */
 }
 
 /* Attributions - very bottom of the page */
@@ -292,7 +307,7 @@ footer>div>p {
     color: inherit;
     font-size: 0.8em;
 }
- 
+
 #vecteezy:hover,
 #freepik:hover {
     color: #A5978A;
@@ -304,10 +319,12 @@ footer>div>p {
 /* Mobiles & small devices */
 
 @media screen and (max-width: 480px) {
-    body {
+
+    body,
+    html {
         overflow-x: hidden;
     }
-    
+
     #hero-image {
         width: 100%;
     }
@@ -389,11 +406,11 @@ footer>div>p {
         height: 475px;
         width: 325px;
     }
-    
+
     .cards label {
         width: 325px;
     }
-    
+
     .cards .card {
         height: 475px;
     }
