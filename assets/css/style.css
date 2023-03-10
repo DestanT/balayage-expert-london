@@ -86,6 +86,7 @@ nav a:hover {
 /* Hero image & First view by user */
 
 #hero-image {
+    border-radius: 0 50% 0 0; /* Slight colour difference in top right corner was worse - bottom right at least looks like its meant to be - better fix in future! */
     margin-bottom: -9px;
 }
 
@@ -311,6 +312,10 @@ footer>div>p {
         width: 100%;
     }
 
+    #hero-text {
+        visibility: hidden;
+    }
+
     #burger-menu-checkbox {
         display: none;
         position: absolute;
@@ -322,7 +327,7 @@ footer>div>p {
     .burger-menu-label {
         display: block;
         position: absolute;
-        top: 42px;
+        top: 50px;
         right: 5px;
         z-index: 9;
     }
