@@ -394,12 +394,13 @@ footer>div>p {
         right: 10px;
     }
 
-    .mobile-view-wrap { /* This helps push text up and down - separates it from the profile picture */
-        padding-top: 60px;
+    #mobile-view-wrap { /* This helps push text up and down - separates it from the profile picture */
+        padding-top: 50px;
         padding-bottom: 60px;
-        max-width: 170px;
+        max-width: 165px;
+        text-align: left;
     }
-
+    
     .about>p {
         margin: 0 10px;
         text-align: justify;
