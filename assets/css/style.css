@@ -84,6 +84,7 @@ nav a:hover {
     font-weight: bolder;
 }
 
+/* index.html */
 /* Hero image & First view by user */
 
 #hero-image {
@@ -103,6 +104,7 @@ nav a:hover {
     background-image: url(../images/hero-text-background.jpg);
     color: rgba(0, 0, 0, 0.3);
     /* Original image too light - this darkens it a bit */
+    background-clip: border-box;
     -webkit-background-clip: text;
     /* CREDIT - https://www.youtube.com/watch?v=g6eNK8hxDRI - The idea to use this line of code came from here, it didn't work without */
 }
@@ -236,6 +238,24 @@ input {
 #treatments:checked~.cards #treatments-card,
 #ladies:checked~.cards #ladies-card {
     transform: translate3d(0, 0, 0);
+}
+
+/* blogs.html */
+
+.blogs-section {
+    background-color: #A5978A;
+    border: 5px solid #EEDDCA;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 95px 10px 10px;
+    height: 800px; /* TESTING ONLY */
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid black;
 }
 
 /* Footer section */
