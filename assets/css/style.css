@@ -118,8 +118,7 @@ nav a:hover {
 
 .about {
     position: relative;
-    background-color: #EBEAE7;
-    background-color: rgba(235, 234, 231, 0.7);
+    background-color: rgba(235, 234, 231, 0.7); /* = #EBEAE7 - but toned down */
     height: auto;
     width: 100%;
 }
@@ -383,18 +382,27 @@ footer>div>p {
         text-align: right;
         margin: 20px 10px 20px;
     }
-
+    
     .about>img {
         visibility: hidden;
     }
 
-    .about {
-        background: rgba(235, 234, 231, 0.7) url(../images/leaf-vector.png) no-repeat left center;
+    #profile-image {
+        visibility: visible;
+        max-height: 250px;
+        top: 90px;
+        right: 10px;
+    }
+
+    .mobile-view-wrap { /* This helps push text up and down - separates it from the profile picture */
+        padding-top: 60px;
+        padding-bottom: 60px;
+        max-width: 170px;
     }
 
     .about>p {
         margin: 0 10px;
-        text-align: center;
+        text-align: justify;
         z-index: 20;
     }
 
