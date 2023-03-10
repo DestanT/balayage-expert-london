@@ -89,6 +89,19 @@ nav a:hover {
     margin-bottom: -9px;
 }
 
+#hero-text { 
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-family: 'Lora', serif;
+    font-size: 115px;
+    font-weight: 900;
+    text-align: center;
+    background-image: url(../images/hero-text-background.jpg);
+    color: rgba(0, 0, 0, 0.3); /* Original image too light - this darkens it a bit */
+    -webkit-background-clip: text; /* CREDIT - https://www.youtube.com/watch?v=g6eNK8hxDRI - The idea to use this line of code came from here, it didn't work without */
+}
+
 .landing-page {
     background-color: #A5978A;
     position: relative;
@@ -254,8 +267,19 @@ footer>div {
     color: inherit;
     font-size: 0.8em;
 }
+
+#freepik {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.8em;
+}
  
-#vecteezy:hover {
+#vecteezy:hover,
+#freepik:hover {
     color: #6A6058;
     font-weight: bolder;
 }
@@ -351,7 +375,8 @@ footer>div {
         height: 475px;
     }
 
-    #vecteezy {
+    #vecteezy,
+    #freepik {
         font-size: 55%;
     }
 }
