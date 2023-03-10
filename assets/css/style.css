@@ -350,4 +350,8 @@ footer>div {
     .cards .card {
         height: 475px;
     }
+
+    #vecteezy {
+        font-size: 55%;
+    }
 }
