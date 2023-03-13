@@ -5,11 +5,16 @@
 /* implement nav toggle when clicked in mobile view!! */
 /* clean up #links in homepage - about isn't levelled correctly */
 /* add aria-labels to everything inlcuding background images in CSS */
+/* sections in homepage */
+/* footer include attributions and push down with absolute values */
+/* webkit for mozilla based browsers */
+/* user stories in readme: I as a user would like to: ... */
+/* link to w3c validation */
+/* readme : under deployment write about development (diff section) */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
-/* Idea for this snippet of code came from the "Love Running" project, I liked the idea of having full control of these parameters later */
-
+/* Reset - Idea for this snippet of code came from the "Love Running" project, I liked the idea of having full control of these parameters later */
 * {
     margin: 0;
     border: 0;
@@ -85,7 +90,7 @@ nav a:hover {
 }
 
 /* index.html */
-/* Hero image & First view by user */
+/* Hero section */
 
 #hero-image {
     border-radius: 0 50% 0 0;
@@ -243,19 +248,37 @@ input {
 /* blogs.html */
 
 .blogs-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
     background-color: #A5978A;
     border: 5px solid #EEDDCA;
     width: calc(100% - 20px);
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     margin: 95px 10px 10px;
-    height: 800px; /* TESTING ONLY */
+    height: auto;
 }
 
-.divider {
+.blogs-section>h2 {
+    position: absolute;
+}
+
+.blogs {
+    border: 1px solid red;
+}
+
+.blogs>img {
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid blue;
+}
+
+#divider {
+    width: 100%;
+    display: block;
+    clear: both;
+    height: 170px;
+    background-color: rgba(235, 234, 231, 0.7);
 }
 
 /* Footer section */
@@ -426,7 +449,6 @@ footer>div>p {
     .about>p {
         margin: 0 10px;
         text-align: justify;
-        z-index: 20;
     }
 
     .card td {
@@ -447,12 +469,6 @@ footer>div>p {
     }
 
     #attributions {
-        height: 5px;
-    }
-
-    #vecteezy,
-    #freepik {
-        font-size: 55%;
-        margin: 0 5px;
+        visibility: hidden;
     }
 }
