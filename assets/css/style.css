@@ -12,6 +12,8 @@
 /* link to w3c validation */
 /* readme : under deployment write about development (diff section) */
 /* burger menu in mobile view needs to disappear after clicking */
+/* resize borders in blogs */
+/* talk about the re-use of code and how you could have improved the reusability of code by better naming conventions */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
@@ -65,7 +67,6 @@ header img {
 
 nav {
     margin: 15px;
-    word-spacing: 20px;
     display: flex;
     position: absolute;
     right: 0;
@@ -74,6 +75,7 @@ nav {
 }
 
 nav li {
+    padding-left: 15px;
     font-size: 1.2rem;
     list-style-type: none;
     display: inline-block;
@@ -224,7 +226,7 @@ tr>.align-left {
     padding: 25px;
 }
 
-input {
+.services-container>input {
     display: none;
 }
 
@@ -248,10 +250,37 @@ input {
 
 /* Contacts section */
 
-.contacts-form>form {
-    display: block;
-    border: 1px solid green;
-    height: 400px;
+.sign-up-div {
+    background-color: #A5978A;
+    position: relative;
+    margin: 95px 10px 10px;
+    border: 5px solid #EEDDCA;
+    box-sizing: border-box;
+    text-align: center;
+    height: 255px;
+}
+
+form label {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+}
+
+form input {
+    background-color: #EEDDCA;
+}
+
+#terms-conditions {
+    border: 2px solid #6A6058;
+}
+
+#terms-conditions+label {
+    width: auto;
+    font-size: 0.7em;
+}
+
+#sign-up:hover {
+    background-color: #6A6058;
 }
 
 /* blogs.html */
