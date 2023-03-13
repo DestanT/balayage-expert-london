@@ -251,34 +251,63 @@ input {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
     background-color: #A5978A;
     border: 5px solid #EEDDCA;
     width: calc(100% - 20px);
     box-sizing: border-box;
     margin: 95px 10px 10px;
-    height: auto;
+    padding-bottom: 100px;
 }
 
 .blogs-section>h2 {
+    /* Title of page */
+    right: 50%;
+    transform: translate(50%, 50%);
     position: absolute;
 }
 
 .blogs {
-    border: 1px solid red;
+    position: relative;
+    margin: 100px 50px 0;
+}
+
+.blogs>h2 {
+    /* Individual blog titles for each blog */
+    position: absolute;
+    top: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.blogs>span {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 0%);
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    text-align: center;
+    color: #251E2D;
+    width: 100%;
 }
 
 .blogs>img {
-    width: 100%;
-    border: 1px solid blue;
+    max-width: 100%;
+    border: 10px solid #675447;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
-#divider {
-    width: 100%;
-    display: block;
-    clear: both;
-    height: 170px;
-    background-color: rgba(235, 234, 231, 0.7);
+.blogs>img:hover {
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.blogs>img:hover~span {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 /* Footer section */
@@ -316,7 +345,7 @@ footer>div>p {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0); 
+    transform: translate(-50%, 0);
 }
 
 #instagram:hover {
