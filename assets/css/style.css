@@ -1,8 +1,8 @@
 /* search for testing and change before submitting! */
 
-/* ask about absolute positioning to bring text in-front of p element in mobile view - surely theres an easier way! */
-/* clean up code using shorthand where possible and clean */
-/* implement nav toggle when clicked in mobile view!! */
+/* Questions for Brian: */
+/* Should I add comments for the media queries? Such as "This is for the navbar element" etc? */
+
 /* clean up #links in homepage - about isn't levelled correctly */
 /* add aria-labels to everything inlcuding background images in CSS */
 /* sections in homepage */
@@ -279,7 +279,7 @@ tr>.align-left {
 
 .blogs {
     position: relative;
-    margin: 100px 50px 0;
+    margin: 100px 30px 0;
 }
 
 .blogs>h2 {
@@ -553,6 +553,18 @@ footer>div>p {
     #attributions {
         visibility: hidden;
     }
+
+    .blogs-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blogs {
+        margin: 100px 20px 0;
+    }
+
+    .blogs>h2 {
+        font-size: 1.4em;
+    }
 }
 
 /* Mobiles & small devices */
@@ -615,5 +627,13 @@ footer>div>p {
         padding: 20px;
         border: 5px solid #675447;
         height: auto;
+    }
+
+    .blogs-section {
+        grid-template-columns: 1fr;
+    }
+
+    .blogs {
+        margin: 100px 10px 0;
     }
 }
