@@ -248,41 +248,6 @@ tr>.align-left {
     transform: translate3d(0, 0, 0);
 }
 
-/* Contacts section */
-
-.sign-up-div {
-    background-color: #A5978A;
-    position: relative;
-    margin: 95px 10px 10px;
-    border: 5px solid #EEDDCA;
-    box-sizing: border-box;
-    text-align: center;
-    height: 255px;
-}
-
-form label {
-    position: relative;
-    display: inline-block;
-    width: 120px;
-}
-
-form input {
-    background-color: #EEDDCA;
-}
-
-#terms-conditions {
-    border: 2px solid #6A6058;
-}
-
-#terms-conditions+label {
-    width: auto;
-    font-size: 0.7em;
-}
-
-#sign-up:hover {
-    background-color: #6A6058;
-}
-
 /* blogs.html */
 
 .blogs-section {
@@ -346,6 +311,51 @@ form input {
 .blogs>img:hover~span {
     opacity: 1;
     transition: 0.5s;
+}
+
+/* Sign up section */
+
+.sign-up-div {
+    background-color: #A5978A;
+    position: relative;
+    margin: 95px 10px 10px;
+    border: 5px solid #EEDDCA;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+}
+
+form label {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+}
+
+#tcs-label {
+    display: block;
+}
+
+form input {
+    background-color: #EEDDCA;
+}
+
+#terms-conditions {
+    accent-color: #675447;
+}
+
+#terms-conditions+label {
+    width: auto;
+    font-size: 0.7em;
+}
+
+#sign-up {
+    font-size: 1.1em;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+#sign-up:hover {
+    background-color: #6A6058;
 }
 
 /* Footer section */
