@@ -35,6 +35,13 @@ h2 {
     font-size: 2.5em;
 }
 
+#special-font {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* Navigation Bar */
 
 #burger-menu-checkbox {
@@ -437,9 +444,9 @@ footer>div>p {
 }
 
 /* Media queries */
-/* Tablets & medium devices */
+/* Tablets & small laptops */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     body,
     html {
@@ -457,17 +464,18 @@ footer>div>p {
     #burger-menu-checkbox {
         display: none;
         position: absolute;
-        top: 50px;
-        right: 10px;
+        top: 40px;
+        right: 7px;
         z-index: 10;
     }
 
     .burger-menu-label {
+        font-size: 1.5em;
         display: block;
         position: absolute;
-        top: 50px;
-        right: 5px;
-        z-index: 9;
+        top: 40px;
+        right: 7px;
+        z-index: 10;
     }
 
     #burger-menu-checkbox:checked~nav {
@@ -476,10 +484,6 @@ footer>div>p {
 
     header {
         display: block;
-    }
-
-    header>a {
-        pointer-events: none;
     }
 
     header img {
@@ -512,14 +516,20 @@ footer>div>p {
     #profile-image {
         visibility: visible;
         /* Unhides this element - hidden due to .about>img */
+        position: relative;
+        float: right;
         max-width: 40%;
         box-sizing: border-box;
-        margin-top: 30px;
+        margin: 0 10px 0 30px;
+
+        /* Resets below */
+        top: 0;
+        right: 0;
     }
 
     .about>p {
         display: block;
-        margin: 0 10px;
+        margin: 0 20px;
         text-align: justify;
     }
 
@@ -549,16 +559,16 @@ footer>div>p {
 
 @media screen and (max-width: 425px) {
 
+    header>a {
+        pointer-events: none;
+    }
+
     #profile-image {
+        visibility: visible;
         position: relative;
         max-width: 90%;
-        transform: translate(5%, 0);
-        margin-bottom: 20px;
-        
-        /* Resets below */
-        top: 0;
-        right: 0;
-        margin-top: 0;
+        margin: 0 0 20px;
+        transform: translate(-5%, 0);
     }
 
     .card>h2 {
