@@ -1,18 +1,12 @@
-/* search for testing and change before submitting! */
-
 /* Questions for Brian: */
 /* Should I add comments for the media queries? Such as "This is for the navbar element" etc? */
+/* #links in homepage - still not levelled correctly */
+/* aria-labels? to everything inlcuding background images in CSS? */
+/* burger menu in mobile view needs to disappear after clicking */
 
-/* clean up #links in homepage - about isn't levelled correctly */
-/* add aria-labels to everything inlcuding background images in CSS */
-/* sections in homepage */
-/* footer include attributions and push down with absolute values */
-/* webkit for mozilla based browsers */
 /* user stories in readme: I as a user would like to: ... */
 /* link to w3c validation */
 /* readme : under deployment write about development (diff section) */
-/* burger menu in mobile view needs to disappear after clicking */
-/* resize borders in blogs */
 /* talk about the re-use of code and how you could have improved the reusability of code by better naming conventions */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
@@ -104,7 +98,7 @@ nav a:hover {
 
 #hero-image {
     border-radius: 0 50% 0 0;
-    /* Slight colour difference in top right corner was worse - bottom right at least looks like its meant to be - better fix in future! */
+    /* Slight colour difference in top right corner stuck out - bottom right at least looks like its meant to be - better fix in future! */
     margin-bottom: -9px;
 }
 
@@ -116,12 +110,8 @@ nav a:hover {
     font-size: 115px;
     font-weight: 900;
     text-align: center;
-    background-image: url(../images/hero-text-background.jpg);
-    color: rgba(0, 0, 0, 0.3);
-    /* Original image too light - this darkens it a bit */
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    /* CREDIT - https://www.youtube.com/watch?v=g6eNK8hxDRI - The idea to use this line of code came from here, it didn't work without */
+    color: #483a31;
+    /* https://pinetools.com/darken-color - #675447 (dark brown tone used throughout website) + 30% darker using this website */
 }
 
 .landing-page {
@@ -137,7 +127,7 @@ nav a:hover {
 .about {
     position: relative;
     background-color: rgba(235, 234, 231, 0.7);
-    /* = #EBEAE7 - but toned down due to opacity */
+    /* = #EBEAE7 - but toned down */
     height: auto;
     width: 100%;
 }
@@ -306,7 +296,7 @@ tr>.align-left {
 
 .blogs>img {
     max-width: 100%;
-    border: 10px solid #675447;
+    border: 5px solid #675447;
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -407,7 +397,7 @@ footer>div>p {
 #instagram:hover {
     color: #6A6058;
     transform: scale(1.1) translate(-50%, -50%);
-    /* Needed to apply the same knowledge here as above - it looked off otherwise */
+    /* Needed to apply the same knowledge here as above */
 }
 
 /* Attributions - very bottom of the page */
@@ -521,7 +511,6 @@ footer>div>p {
         max-width: 40%;
         box-sizing: border-box;
         margin: 0 10px 0 30px;
-
         /* Resets below */
         top: 0;
         right: 0;
