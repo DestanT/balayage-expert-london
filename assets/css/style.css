@@ -10,7 +10,6 @@
 /* link to w3c validation */
 /* readme : under deployment write about development (diff section) */
 /* talk about the re-use of code and how you could have improved the reusability of code by better naming conventions */
-/* iphone blogs not showing properly + header>a link -remove*/
 /* sign up button text colour - change */
 /* individual blogs text not in center in larger viewports */
 
@@ -316,7 +315,7 @@ tr>.align-left {
     transition: 0.5s;
 }
 
-/* Sign up section */
+/* sign-up.hmtl */
 
 .sign-up-div {
     background-color: #A5978A;
@@ -416,24 +415,13 @@ footer>div>p {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-right: 15px;
+    margin-right: 5px;
     text-decoration: none;
     color: inherit;
     font-size: 0.8em;
 }
 
-#freepik {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 15px;
-    text-decoration: none;
-    color: inherit;
-    font-size: 0.8em;
-}
-
-#vecteezy:hover,
-#freepik:hover {
+#vecteezy:hover {
     color: #A5978A;
     font-weight: bolder;
 }
