@@ -10,7 +10,6 @@
 /* link to w3c validation */
 /* readme : under deployment write about development (diff section) */
 /* talk about the re-use of code and how you could have improved the reusability of code by better naming conventions */
-/* delete unneeded pictures in images folder */
 /* iphone blogs not showing properly + header>a link -remove*/
 /* sign up button text colour - change */
 /* individual blogs text not in center in larger viewports */
@@ -524,7 +523,7 @@ footer>div>p {
 
     .about>p {
         display: block;
-        margin: 0 20px;
+        margin: 0 25px;
         text-align: justify;
     }
 
@@ -564,7 +563,7 @@ footer>div>p {
 
 /* Mobiles & small devices */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
 
     header>a {
         pointer-events: none;
