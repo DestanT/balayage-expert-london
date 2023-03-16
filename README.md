@@ -80,7 +80,7 @@ The content of this section was written by ChatGPT-3. Below are the steps taken 
 
 ![Result!](/documentation/chat-gpt-2.png)
 
-The results here were good but I wondered if I could take thigns a step further and include elements of 'search engine optimisation'. Which is explained below:
+The results here were good but I wondered if I could take things a step further and include elements of 'search engine optimisation'. Which is explained below:
 
   * Step 2 - Do keyword research on Google's [keyword planner](https://ads.google.com/home/tools/keyword-planner/) and prompt ChatGPT with the chosen keywords:
   
@@ -102,7 +102,7 @@ __The Blogs Page__
 
 ![Blogs Page](/documentation/blogs.png)
 
-The blogs page currently includes 6 headings with various topics of interest. This page will likely be used many times by users to reference back to questions that they may have about their hair and other hair related topics. The page will grow to house many more blogs and users can be pointed towards the page for a more in depth answer to a question that they may be seeking.
+The blogs page currently includes 6 headings with various topics of interest. This page will likely be used many times by users to reference back to questions that they may have about their hair and other hair related topics. The page will grow to house many more blogs and users can be pointed towards the page for a more in depth answer to a question that they may have.
 
 In its current state the 'blogs' are unclickable and act as a sort of placeholder for future implementation. To not confuse current users with this a 'coming soon' text is implemented when their mouse hovers over the individual blog posts.
 
@@ -123,8 +123,9 @@ Larger screen sizes will also see the attribution link to the leaf vector used. 
 ### Features Left to Implement
 
 - A clickable 'Chat to me' button on the landing page; under the hero text - that opens a chat in Instagram and connects you directly to me.
-- The same button made available for smaller screens - but overlapping the hero image.
+  - The same button made available for smaller screens - but overlapping the hero image.
 - Clickable blogs that take the user to another page with the desired blog and information.
+- An API for google reviews to automatically show up and scroll through on a dedicated space on the website.
 
 ## Testing 
 
@@ -146,6 +147,8 @@ Larger screen sizes will also see the attribution link to the leaf vector used. 
 - Step-by-step process of how it was deployed to GitHub.
 - Live link should be here too!
 
+## Development
+
 ## Credits 
 
 ### Content
@@ -153,6 +156,8 @@ Larger screen sizes will also see the attribution link to the leaf vector used. 
 * The colour palette was chosen by using the [Eye Dropper](https://eyedropper.org/) Chrome extension tool on the hero image, then inserted into [Colormind.io](http://colormind.io/).
 * 'About' section was written using OpenAI's [ChatGPT](https://openai.com/product/gpt-4).
 * The carousel effect in the services section was done with the help of this [YouTube](https://www.youtube.com/watch?v=LBAThoUn3rU) video.
+
+* This [page](https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/) taught me how to center an element and the logic behind it.
 
 ### Media
 
