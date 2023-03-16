@@ -226,6 +226,7 @@ tr>.align-left {
     border-radius: 10px;
     box-sizing: border-box;
     padding: 25px;
+    cursor: pointer;
 }
 
 .services-container>input {
