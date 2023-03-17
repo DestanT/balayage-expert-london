@@ -37,6 +37,10 @@ body {
     font-family: 'Martel', serif;
 }
 
+.center-text {
+    text-align: center;
+}
+
 h2 {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 2.5em;
@@ -46,7 +50,10 @@ h2 {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 1.3em;
     font-weight: bold;
-    text-align: center;
+}
+
+.display-block {
+    display: block;
 }
 
 /* Navigation Bar */
@@ -122,12 +129,11 @@ nav a:hover {
     font-family: 'Lora', serif;
     font-size: 115px;
     font-weight: 900;
-    text-align: center;
     color: #483a31;
     /* https://pinetools.com/darken-color - #675447 (dark brown tone used throughout website) + 30% darker using this website */
 }
 
-.landing-page {
+.main-section {
     background-color: #A5978A;
     position: relative;
     margin: 95px 10px 10px;
@@ -141,7 +147,6 @@ nav a:hover {
     position: relative;
     background-color: rgba(235, 234, 231, 0.7);
     /* = #EBEAE7 - but toned down */
-    height: auto;
     width: 100%;
 }
 
@@ -154,10 +159,6 @@ nav a:hover {
     border: 5px solid #675447;
     top: 70px;
     right: 20px;
-}
-
-.about>h2 {
-    text-align: center;
 }
 
 .about>p {
@@ -266,14 +267,9 @@ tr>.align-left {
 /* blogs.html */
 
 .blogs-section {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #A5978A;
-    border: 5px solid #EEDDCA;
     width: calc(100% - 20px);
-    box-sizing: border-box;
-    margin: 95px 10px 10px;
     padding-bottom: 100px;
 }
 
@@ -330,27 +326,13 @@ tr>.align-left {
 
 /* sign-up.hmtl */
 
-.sign-up-div {
-    background-color: #A5978A;
-    position: relative;
-    margin: 95px 10px 10px;
-    border: 5px solid #EEDDCA;
-    box-sizing: border-box;
-    text-align: center;
-    height: auto;
-}
-
 form label {
     position: relative;
     display: inline-block;
     width: 120px;
 }
 
-#tcs-label {
-    display: block;
-}
-
-form input {
+.form-input {
     background-color: #EEDDCA;
 }
 
@@ -363,14 +345,20 @@ form input {
     font-size: 0.7em;
 }
 
-#sign-up {
+.submit-button {
     font-size: 1.1em;
     padding: 6px;
     border-radius: 10px;
 }
 
-#sign-up:hover {
+.submit-button:hover {
     background-color: #6A6058;
+}
+
+/* 404.html */
+
+#error-page {
+    padding: 50px;
 }
 
 /* Footer section */
@@ -467,7 +455,6 @@ footer>div>p {
 
     .burger-menu-label {
         font-size: 1.5em;
-        display: block;
         position: absolute;
         top: 40px;
         right: 7px;
@@ -475,10 +462,6 @@ footer>div>p {
     }
 
     #burger-menu-checkbox:checked~nav {
-        display: block;
-    }
-
-    header {
         display: block;
     }
 
@@ -492,9 +475,9 @@ footer>div>p {
         margin: 0;
         background-color: inherit;
         width: 100%;
-        height: auto;
         display: none;
         opacity: 0.9;
+        height: auto;
     }
 
     nav li {
