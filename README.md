@@ -144,64 +144,36 @@ Larger screen sizes will also see the attribution link to the leaf vector used. 
 
 ## Deployment
 
-- Step-by-step process of how it was deployed to GitHub.
-- Live link should be here too!
+The project was deployed on GitHub pages from the 'Main Branch Source Code' using the following steps:
+* 'git add .', 'git commit" and 'git push' commands were issued one final time when the project was ready and finished.
+* On Github the repository for the project was selected.
+* Click the 'Settings' tab.
+* On the left; select 'Pages'.
+* From here; select the source as 'Main Branch'.
+* Click 'Save'.
+
+GitHub may take a few minutes to deploy the website so be patient.
+
+The live link to my project can be found [**here**](https://destant.github.io/balayage-expert-london/).
 
 ## Development
+
+Should anyone wish to add to the project, please feel free to open a new workspace with in its current state; then commit and push any changes to the main branch. I will review and add the to the main branch as soon as possible.
 
 ## Credits 
 
 ### Content
 
 * The colour palette was chosen by using the [Eye Dropper](https://eyedropper.org/) Chrome extension tool on the hero image, then inserted into [Colormind.io](http://colormind.io/).
+* To help me find and visualise font I used [Fontjoy](https://fontjoy.com/).
 * 'About' section was written using OpenAI's [ChatGPT](https://openai.com/product/gpt-4).
 * The carousel effect in the services section was done with the help of this [YouTube](https://www.youtube.com/watch?v=LBAThoUn3rU) video.
-
-* This [page](https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/) taught me how to center an element and the logic behind it.
-
-### Media
-
-* The Logo and Favicon used were made on [Favicon.io](https://favicon.io/)
-* Burger Menu and Instagram icons from [Font Awesome](fontawesome.com)
-* Leaf Vector from [Vecteezy.com](https://www.vecteezy.com/free-vector/leaf-background)
-* All other media and images used are my own
-
-- https://ui.dev/amiresponsive - Testing responsivness on various devices
-
-- https://fontjoy.com/ - To find a font combination that looked the part for my needs.
-- https://developer.mozilla.org/en-US/ - For correct syntax and proper use of elements and their attributes.
-- https://midjourney.com/ - An AI bot was used to help inspire a landing page, although unsuccessful; my inspiration for the color theme did come from the image created.
-- https://eyedropper.org/ - Used to extract colors from MidJourney created image.
-
-**NOTES** INCLUDE THE MIDJOURNEY IMAGE! **NOTES**
-** SPLIT INTO CONTENT $ MEDIA (below) **
-
-### Content 
+* [Stack Overflow](https://stackoverflow.com/), [Mozilla Dev Tools](https://developer.mozilla.org) and [CSS-Tricks](https://css-tricks.com/) was used a lot to help me build an understanding on the proper use of CSS and general syntax queries I had throughout the project.
 
 ### Media
 
-## Other General Project Advice
-
-- Make sure to keep commit messages in the imperative mood 
-- Name files appropriately
-- Extra research to do:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-  [about]: /documentation/about.png
-  [am-i-responsive]: /documentation/am-i-responsive.png
-  [blogs]: /documentation/blogs.png
-  [colour-palette]: /documentation/colour-palette.png
-  [favicon]: /documentation/favicon.png
-  [footer]: /documentation/footer.png
-  [logo]: https://destant.github.io/balayage-expert-london/documentation/logo.png
-  [nav-bar-large]: /documentation/nav-bar-large-view.png
-  [nav-bar-small-closed]: /documentation/nav-bar-small-closed.png
-  [nav-bar-small-open]: /documentation/nav-bar-small-open.png
-  [services-price-list]: /documentation/services-price-list.png
-  [services-small-view]: /documentation/services-small-view.png
-  [sign-up]: /documentation/sign-up.png
-  [chatgpt1]: /documentation/chat-gpt-1.png
-  [chatgpt2]: /documentation/chat-gpt-2.png
-  [chatgpt3]: /documentation/chat-gpt-3.png
+* The Logo and Favicon used were made on [Favicon.io](https://favicon.io/).
+* Burger Menu and Instagram icons from [Font Awesome](fontawesome.com).
+* Leaf Vector from [Vecteezy.com](https://www.vecteezy.com/free-vector/leaf-background).
+* To compress .PNG and .JPG files I used [CompressPNG](https://compresspng.com/) and [CompressJPG](https://compressjpeg.com/) respectively.
+* All other media and images used are my own.
