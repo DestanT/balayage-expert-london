@@ -1,26 +1,14 @@
-/* Questions for Brian: */
-/* Should I add comments for the media queries? Such as "This is for the navbar element" etc? */
-/* #links in homepage - still not levelled correctly */
-/* aria-labels? to everything inlcuding background images in CSS? */
-/* burger menu in mobile view needs to disappear after clicking */
-/* scroll problem on mobile, why? */
-
 /* About # */
-/*alt text on any images */
-/* 404 page */
 /* table of contents on readme */
 
 /* Wireframes */
 /* colour palette part of the surface plane */
 /* technologies used just before deployment */
 
-/* 404 error page! */
 /* user stories in readme: I as a user would like to: ... between intro and features */
 /* link to w3c validation */
 /* readme : under deployment write about development (diff section) */
 /* talk about the re-use of code and how you could have improved the reusability of code by better naming conventions */
-/* sign up button text colour - change */
-/* individual blogs text not in center in larger viewports */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Martel&family=Nothing+You+Could+Do&display=swap');
 
@@ -454,6 +442,7 @@ footer>div>p {
     }
 
     .burger-menu-label {
+        display: block;
         font-size: 1.5em;
         position: absolute;
         top: 40px;
@@ -463,6 +452,7 @@ footer>div>p {
 
     #burger-menu-checkbox:checked~nav {
         display: block;
+        top: 75px;
     }
 
     header img {
@@ -472,12 +462,12 @@ footer>div>p {
     }
 
     nav {
+        display: none;
         margin: 0;
         background-color: inherit;
         width: 100%;
-        display: none;
-        opacity: 0.9;
         height: auto;
+        opacity: 0.9;
     }
 
     nav li {
