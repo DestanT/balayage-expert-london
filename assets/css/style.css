@@ -179,6 +179,10 @@ em {
     /* Smaller table - pushes treatments table down in order to center better within its card */
 }
 
+.card {
+    display: block;
+}
+
 .card table {
     width: 100%;
 }
