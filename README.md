@@ -167,7 +167,6 @@ Should anyone wish to add to the project, please feel free to open a new workspa
 * The colour palette was chosen by using the [Eye Dropper](https://eyedropper.org/) Chrome extension tool on the hero image, then inserted into [Colormind.io](http://colormind.io/).
 * To help me find and visualise font I used [Fontjoy](https://fontjoy.com/).
 * 'About' section was written using OpenAI's [ChatGPT](https://openai.com/product/gpt-4).
-* The carousel effect in the services section was done with the help of this [YouTube](https://www.youtube.com/watch?v=LBAThoUn3rU) video.
 * [Stack Overflow](https://stackoverflow.com/), [Mozilla Dev Tools](https://developer.mozilla.org) and [CSS-Tricks](https://css-tricks.com/) was used a lot to help me build an understanding on the proper use of CSS and general syntax queries I had throughout the project.
 
 ### Media

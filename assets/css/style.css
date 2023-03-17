@@ -130,8 +130,9 @@ nav a:hover {
 
 /* About section */
 
-/* Fixes issue with sticky navigation bar covering the 'About' header */
-#about {
+/* Fixes issue with sticky navigation bar covering the 'About' and 'Services' headers */
+#about,
+#services {
     padding-bottom: 85px;
 }
 
@@ -159,29 +160,52 @@ nav a:hover {
 }
 
 /* Services section */
-/* CREDIT - https://www.youtube.com/watch?v=LBAThoUn3rU - The carousel idea came from here, took a lot of work on dev tools to make it work for me though. It was a fun nightmare! */
+
+.services-section {
+    height: 800px;
+}
 
 strong,
 em {
     font-size: 0.7rem;
 }
 
-#services h2 {
-    text-align: center;
+.card {
+    margin: 0 auto;
+    border: 10px solid #675447;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 25px;
+    height: 525px;
+    width: 400px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #margin-services-ladies {
-    margin-bottom: 40px;
-    /* Smaller table - pushes ladies table down in order to center better within its card */
+    margin-right: 0;
 }
 
 #margin-services-treatments {
+    margin-left: 0;
+}
+
+#margin-services-ladies>h2 {
+    margin-bottom: 60px;
+    /* Smaller table - pushes ladies table down in order to center better within its card */
+}
+
+#margin-services-treatments>h2 {
     margin-bottom: 90px;
     /* Smaller table - pushes treatments table down in order to center better within its card */
 }
 
-.card {
-    display: block;
+.push-down {
+    position: relative;
+    top: 100px;
 }
 
 .card table {
@@ -201,59 +225,6 @@ em {
 
 tr>.align-left {
     text-align: left;
-}
-
-.services-container {
-    display: flex;
-    margin: 25px;
-    justify-content: center;
-}
-
-.cards {
-    position: relative;
-    height: 525px;
-    width: 400px;
-    perspective: 600px;
-    transform-style: preserve-3d;
-}
-
-.cards label {
-    position: absolute;
-    background-color: #A5978A;
-    width: 400px;
-    transition: all 0.7s ease;
-}
-
-.cards .card {
-    position: relative;
-    height: 525px;
-    border: 10px solid #675447;
-    border-radius: 10px;
-    box-sizing: border-box;
-    padding: 25px;
-    cursor: pointer;
-}
-
-.services-container>input {
-    display: none;
-}
-
-#colors:checked~.cards #treatments-card,
-#treatments:checked~.cards #ladies-card,
-#ladies:checked~.cards #colors-card {
-    transform: translate3d(65%, 0, -80px);
-}
-
-#colors:checked~.cards #ladies-card,
-#treatments:checked~.cards #colors-card,
-#ladies:checked~.cards #treatments-card {
-    transform: translate3d(-65%, 0, -80px);
-}
-
-#colors:checked~.cards #colors-card,
-#treatments:checked~.cards #treatments-card,
-#ladies:checked~.cards #ladies-card {
-    transform: translate3d(0, 0, 0);
 }
 
 /* blogs.html */
