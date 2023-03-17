@@ -1,4 +1,3 @@
-/* About # */
 /* table of contents on readme */
 
 /* Wireframes */
@@ -131,6 +130,7 @@ nav a:hover {
 
 /* About section */
 
+/* Fixes issue with sticky navigation bar covering the 'About' header */
 #about {
     padding-bottom: 85px;
 }
