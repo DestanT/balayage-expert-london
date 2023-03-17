@@ -131,6 +131,10 @@ nav a:hover {
 
 /* About section */
 
+#about {
+    padding-bottom: 85px;
+}
+
 .about {
     position: relative;
     background-color: rgba(235, 234, 231, 0.7);
