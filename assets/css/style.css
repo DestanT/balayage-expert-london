@@ -5,8 +5,17 @@
 /* burger menu in mobile view needs to disappear after clicking */
 /* scroll problem on mobile, why? */
 
+/* About # */
+/*alt text on any images */
+/* 404 page */
+/* table of contents on readme */
+
+/* Wireframes */
+/* colour palette part of the surface plane */
+/* technologies used just before deployment */
+
 /* 404 error page! */
-/* user stories in readme: I as a user would like to: ... */
+/* user stories in readme: I as a user would like to: ... between intro and features */
 /* link to w3c validation */
 /* readme : under deployment write about development (diff section) */
 /* talk about the re-use of code and how you could have improved the reusability of code by better naming conventions */
@@ -164,8 +173,7 @@ em {
     font-size: 0.7rem;
 }
 
-#services>h2,
-.card>h2 {
+#services h2 {
     text-align: center;
 }
 
