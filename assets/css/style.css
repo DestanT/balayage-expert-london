@@ -18,6 +18,11 @@
     padding: 0;
 }
 
+/* Fixes issue with sticky navigation bar covering the 'About' and 'Services' headers */
+html {
+    scroll-padding-top: 85px;
+}
+
 body {
     background-color: #6A6058;
     color: #251E2D;
@@ -129,12 +134,6 @@ nav a:hover {
 }
 
 /* About section */
-
-/* Fixes issue with sticky navigation bar covering the 'About' and 'Services' headers */
-#about,
-#services {
-    padding-bottom: 85px;
-}
 
 .about {
     position: relative;
