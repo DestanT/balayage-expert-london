@@ -476,21 +476,28 @@ footer>div>p {
         text-align: justify;
     }
 
+    .services-section {
+        height: 730px;
+    }
+
+    .card th {
+        font-size: 0.9em;
+    }
+
     .card td {
+        font-size: 0.9em;
         height: 40px;
     }
 
     .cards {
+        display: flex;
         height: 475px;
-        width: 325px;
-    }
-
-    .cards label {
-        width: 325px;
+        margin-bottom: 45px;
     }
 
     .cards .card {
         height: 475px;
+        width: 315px;
     }
 
     #attributions {
@@ -507,6 +514,44 @@ footer>div>p {
 
     .blogs>h2 {
         font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .services-section {
+        height: auto;
+    }
+
+    .push-down {
+        top: 0;
+    }
+
+    .cards {
+        display: block;
+        height: auto;
+    }
+
+    .cards .card {
+        margin-bottom: 20px;
+        height: auto;
+        width: 315px;
+    }
+    
+    #margin-services-ladies {
+        margin-right: auto;
+    }
+
+    #margin-services-ladies>h2 {
+        margin-bottom: 10px;
+    }
+
+    #margin-services-treatments {
+        margin-left: auto;
+    }
+
+    #margin-services-treatments>h2 {
+        margin-bottom: 10px;
     }
 }
 
@@ -535,14 +580,6 @@ footer>div>p {
         margin-bottom: 10px;
     }
 
-    #margin-services-ladies {
-        margin-bottom: 10px;
-    }
-
-    #margin-services-treatments {
-        margin-bottom: 10px;
-    }
-
     .card th {
         font-size: 0.8em;
         width: 30px;
@@ -554,26 +591,9 @@ footer>div>p {
         height: 30px;
     }
 
-    .services-container {
-        display: block;
-        margin: 10px;
-    }
-
-    .cards {
-        height: auto;
-        width: 100%;
-    }
-
-    .cards label {
-        position: relative;
-        width: 100%;
-    }
-
     .cards .card {
-        margin: 20px 0;
         padding: 20px;
         border: 5px solid #675447;
-        height: auto;
     }
 
     .blogs-section {
@@ -582,5 +602,12 @@ footer>div>p {
 
     .blogs {
         margin: 100px 10px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .cards .card {
+        width: 290px;
     }
 }
