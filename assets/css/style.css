@@ -1,10 +1,6 @@
 /* table of contents on readme */
-
-/* Wireframes */
-/* colour palette part of the surface plane */
 /* technologies used just before deployment */
 
-/* user stories in readme: I as a user would like to: ... between intro and features */
 /* link to w3c validation */
 /* readme : under deployment write about development (diff section) */
 /* talk about the re-use of code and how you could have improved the reusability of code by better naming conventions */
@@ -152,6 +148,8 @@ nav a:hover {
     font-size: 1.5em;
     padding: 6px;
     border-radius: 5px;
+    background-color: #EEDDCA;
+    cursor: pointer;
 }
 
 #hero-text~form>button:hover {
@@ -336,6 +334,8 @@ form label {
     font-size: 1.1em;
     padding: 6px;
     border-radius: 10px;
+    background-color: #EEDDCA;
+    cursor: pointer;
 }
 
 .submit-button:hover {
@@ -415,7 +415,6 @@ footer>div>p {
 }
 
 /* Media queries */
-
 /* Large laptop */
 
 @media screen and (max-width: 1440px) {
