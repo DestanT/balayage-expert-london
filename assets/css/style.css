@@ -17,6 +17,7 @@
 /* Fixes issue with sticky navigation bar covering the 'About' and 'Services' headers */
 html {
     scroll-padding-top: 85px;
+    overflow-x: hidden;
 }
 
 body {
@@ -438,11 +439,6 @@ footer>div>p {
 /* Tablets & small laptops */
 
 @media screen and (max-width: 1024px) {
-
-    body,
-    html {
-        overflow-x: hidden;
-    }
 
     #hero-image {
         width: 100%;
