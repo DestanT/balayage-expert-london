@@ -454,7 +454,8 @@ footer>div>p {
 
     #hero-sub-text {
         top: 2%;
-        right: 5%;
+        right: 0%;
+        font-size: 55px;
         color: #EEDDCA;
     }
 
@@ -572,6 +573,11 @@ footer>div>p {
 }
 
 @media screen and (max-width: 768px) {
+
+    #hero-sub-text {
+        top: 1%;
+        font-size: 45px;
+    }
 
     .services-section {
         height: auto;
