@@ -78,6 +78,10 @@ header img {
     align-items: center;
 }
 
+header>a {
+    cursor: pointer;
+}
+
 nav {
     margin: 15px;
     display: flex;
@@ -108,6 +112,14 @@ nav a:hover {
 /* index.html */
 /* Hero section */
 
+.main-section {
+    background-color: #A5978A;
+    position: relative;
+    margin: 95px 10px 10px;
+    border: 5px solid #EEDDCA;
+    box-sizing: border-box;
+}
+
 #hero-image {
     border-radius: 0 50% 0 0;
     /* Slight colour difference in top right corner stuck out - bottom right at least looks like its meant to be - better fix in future! */
@@ -116,7 +128,7 @@ nav a:hover {
 
 #hero-text {
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 5%;
     font-family: 'Lora', serif;
     font-size: 115px;
@@ -125,12 +137,25 @@ nav a:hover {
     /* https://pinetools.com/darken-color - #675447 (dark brown tone used throughout website) + 30% darker using this website */
 }
 
-.main-section {
-    background-color: #A5978A;
-    position: relative;
-    margin: 95px 10px 10px;
-    border: 5px solid #EEDDCA;
-    box-sizing: border-box;
+#hero-sub-text {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 55px;
+    color: #483a31;
+}
+
+#hero-text~form>button {
+    position: absolute;
+    top: 27%;
+    right: 30%;
+    font-size: 1.5em;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#hero-text~form>button:hover {
+    background-color: #6A6058;
 }
 
 /* About section */
@@ -390,6 +415,27 @@ footer>div>p {
 }
 
 /* Media queries */
+
+/* Large laptop */
+
+@media screen and (max-width: 1440px) {
+
+    #hero-text {
+        font-size: 85px;
+    }
+
+    #hero-sub-text {
+        position: absolute;
+        top: 15%;
+        right: 7%;
+        font-size: 35px;
+    }
+
+    #hero-text~form>button {
+        top: 20%;
+    }
+}
+
 /* Tablets & small laptops */
 
 @media screen and (max-width: 1024px) {
@@ -404,6 +450,16 @@ footer>div>p {
     }
 
     #hero-text {
+        visibility: hidden;
+    }
+
+    #hero-sub-text {
+        top: 2%;
+        right: 5%;
+        color: #EEDDCA;
+    }
+
+    #hero-text~form>button {
         visibility: hidden;
     }
 
@@ -536,7 +592,7 @@ footer>div>p {
         height: auto;
         width: 315px;
     }
-    
+
     #margin-services-ladies {
         margin-right: auto;
     }
@@ -560,10 +616,15 @@ footer>div>p {
 
     header>a {
         pointer-events: none;
+        cursor: none;
     }
 
     header img {
         max-width: 85%;
+    }
+
+    #hero-sub-text {
+        visibility: hidden;
     }
 
     #profile-image {

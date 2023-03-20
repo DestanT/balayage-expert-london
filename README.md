@@ -1,14 +1,18 @@
 # Balayage Expert London
 
-This website is intended for information on the services I provide as a hairdresser, the main focus being highlights and balayages. In future updates I would like to include blogs on the most hot topics in the industry and answers to frequently asked questions in the salon.
+## The Who and Why
 
-It's primary target are women with long hair looking to change the colour of their hair in the most natural looking way. Moreover it can be used to give clients a more in depth answer to the questions that they may have about the services hairdressers provide.
+On the the strategy plane the intent of this project is to relay information about the hairdressing services 'Balayage Expert London' provides. The main focus being highlights and balayages - though other information; such as price and other services provided can also be found here.
+
+The primary target of this project are women with long hair looking to change the colour of their hair in the most natural looking way. Most of which tend to have similar concerns about their hair and questions about services provided. The website seeks to answer those questions and other hot topics in the form of blogs.
+
+As a client I would be more trusting towards the hairdresser if they wrote about these topics in depth. This would not only set my mind at ease about his/her abilities and knowledge on the topic but also answer any questions/concerns I may have.
+
+In future more and more blogs would be added to the site and clients would be led here to not only answer them, but perhaps also advertise other services that are provided by keeping clients engaged by the way of interesting topics/blogs. As a user of this site I would sign up to the mailing list to get notified whenever there are any offers or new blogs published.
 
 You can view the website by clicking [**here**](https://destant.github.io/balayage-expert-london/).
 
-## Features 
-
-### Existing Features
+## The Initial Planning
 
 __Colour Palette__
 
@@ -18,6 +22,16 @@ The choice of colours is very important, as such, it should be the first aspect 
 * Warm tones - this works more harmoniously with natural looking hair, which is typically warm in tone.
 * Not identical colours to colours you would find in hair - some contrast between images used and overall colour scheme is important!
 * Colours found in the hair of the hero image on the landing page can be used as a starting place - but ultimately this chosen colour should be replaced to not match exactly.
+
+__Wireframes__
+
+![index.html wireframe](/documentation/wireframe1.png)
+![blogs.html wireframe](/documentation/wireframe2.png)
+![contact.html wireframe](/documentation/wireframe3.png)
+
+## Features 
+
+### Implemented Features
 
 __The Favicon__
 
@@ -39,7 +53,7 @@ The navigation bar is home to the logo and other links that help navigate the we
   * devices below a screen width of 1024px
   * and devices above a screen width of 1024px
 
-__Larger Devices__
+**_Larger Devices_**
 
 ![The Navigation Bar](/documentation/nav-bar-large-view.png)
 
@@ -47,6 +61,8 @@ This navigation bar is seen on desktops and other large screen devices. It featu
   * Sticky - sticks to the top of the page for easy access/navigation from anywhere on the site.
   * Clickable logo - takes the user back to the homepage.
   * Navigation links on the right to various key locations on the website.
+
+**_Smaller Devices_**
 
 ![Small devices Nav-Bar](/documentation/nav-bar-small-view-closed.png)
 
@@ -135,8 +151,8 @@ Larger screen sizes will also see the attribution link to the leaf vector used. 
 
 ### Validator Testing 
 
-- HTML - Use W3C Validator
-- CSS - Use W3C CSS Validator (Jigsaw)
+- HTML - No errors or warnings to show. Link to report [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdestant.github.io%2Fbalayage-expert-london%2F).
+- CSS - No errors found. Link to report [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdestant.github.io%2Fbalayage-expert-london%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 ### Unfixed Bugs
 
@@ -165,6 +181,7 @@ Should anyone wish to add to the project, please feel free to open a new workspa
 ### Content
 
 * The colour palette was chosen by using the [Eye Dropper](https://eyedropper.org/) Chrome extension tool on the hero image, then inserted into [Colormind.io](http://colormind.io/).
+* The wireframes were made using [Balsamiq](https://balsamiq.com/wireframes/).
 * To help me find and visualise font I used [Fontjoy](https://fontjoy.com/).
 * 'About' section was written using OpenAI's [ChatGPT](https://openai.com/product/gpt-4).
 * [Stack Overflow](https://stackoverflow.com/), [Mozilla Dev Tools](https://developer.mozilla.org) and [CSS-Tricks](https://css-tricks.com/) was used a lot to help me build an understanding on the proper use of CSS and general syntax queries I had throughout the project.
