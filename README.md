@@ -1,10 +1,36 @@
 # Balayage Expert London
 
-## The Who and Why
+## Table of Contents
+1. [Strategy: The Who and Why](#strategy-the-who-and-why)
+2. [Scope: What Features Are Required](#scope-what-features-are-required)
+    1. [The Logo]
+    2. [The Favicon]
+    3. [The Blogs Page]
+    4. [The Sign Up Page]
+    5. [The Footer & Attributions]
+3. [Structure: Shaping The Site](#structure-shaping-the-site)
+    1. [Navigation Bar]
+    2. [The Landing Page]
+    3. [The About Section]
+    4. [The Services Section]
+4. [Skeleton: The View For The User]()
+    1. [Colour Palette]
+    2. [Wireframes]
+5. [Testing, Struggles and Future Features]()
+    1. Testing
+    2. Bugs/Challenges
+    3. Feature Ideas For The Future
+6. [Deployment]()
+7. [Development]()
+8. [Credits]()
+    1. [Content]
+    2. [Media]
+
+## Strategy: The Who and Why
 
 On the the strategy plane the intent of this project is to relay information about the hairdressing services 'Balayage Expert London' provides. The main focus being highlights and balayages - though other information; such as price and other services provided can also be found here.
 
-The primary target of this project are women with long hair looking to change the colour of their hair in the most natural looking way. Most of which tend to have similar concerns about their hair and questions about services provided. The website seeks to answer those questions and other hot topics in the form of blogs.
+The primary target of this project are women with long hair looking to change the colour of their hair in the most natural looking way. Most of which tend to have similar concerns about their hair and questions about services provided. The website seeks to answer those questions and other hot topics in the form of blogs. So in the perspective of the hairdresser - it is a wonderful tool to document these topics and point his current and potentially new clients to.
 
 As a client I would be more trusting towards the hairdresser if they wrote about these topics in depth. This would not only set my mind at ease about his/her abilities and knowledge on the topic but also answer any questions/concerns I may have.
 
@@ -12,40 +38,51 @@ In future more and more blogs would be added to the site and clients would be le
 
 You can view the website by clicking [**here**](https://destant.github.io/balayage-expert-london/).
 
-## The Initial Planning
-
-__Colour Palette__
-
-![The colour palette](/documentation/colour-palette.png)
-
-The choice of colours is very important, as such, it should be the first aspect of the project you look into. Key points to consider when choosing the colour palette:
-* Warm tones - this works more harmoniously with natural looking hair, which is typically warm in tone.
-* Not identical colours to colours you would find in hair - some contrast between images used and overall colour scheme is important!
-* Colours found in the hair of the hero image on the landing page can be used as a starting place - but ultimately this chosen colour should be replaced to not match exactly.
-
-__Wireframes__
-
-![index.html wireframe](/documentation/wireframe1.png)
-![blogs.html wireframe](/documentation/wireframe2.png)
-![contact.html wireframe](/documentation/wireframe3.png)
-
-## Features 
-
-### Implemented Features
-
-__The Favicon__
-
-![Favicon](/documentation/favicon.png)
-
-* All pages feature the favicon icon in the browser tab - for easy identification of the site when having multiple tabs open.
+## Scope: What Features Are Required
 
 __The Logo__
 
 ![Logo](/documentation/logo.png)
 
-The logo sits on the left hand side of the sticky navigation bar. Thus is always in the users line of site and builds familiarity.
+The logo sits on the left hand side of the sticky navigation bar. Thus is always in the users line of site and builds familiarity with the brand.
   * On larger screen sizes the logo is clickable and takes the user back to the homepage.
   * On smaller screens such as mobiles and tablets this feature is turned off as it can cause misclicks when the 'burger menu' is the intended target click.
+
+__The Favicon__
+
+![Favicon](/documentation/favicon.png)
+
+Leading on from the logo this feature will also help build familiarity.
+* All pages will have the favicon icon in the browser tab - makes for easy identification of the site when having multiple tabs open.
+
+__The Blogs Page__
+
+![Blogs Page](/documentation/blogs.png)
+
+The blogs page currently includes 6 headings with various topics of interest. This page will likely be used many times by users to reference back to questions that they may have about their hair and other hair related topics. The page will grow to house many more blogs and users can be pointed towards the page for a more in depth answer to a question that they may have.
+  * In future when there are too many blogs to scroll through - a search feature can be implemented here.
+
+In its current state the 'blogs' are unclickable and act as a sort of placeholder for future implementation. To not confuse current users with this a 'coming soon' text is implemented when their mouse hovers over the individual blog posts.
+
+__The Sign Up Page__
+
+![Sign Up!](/documentation/sign-up.png)
+
+The sign up section is for users to be able to enter their details (name, surname and email address) in order for them to be contacted in future should there be any available offers and discounts coming up. It can also notify the users when a new blog post is added to the site.
+
+The industry is known to have 'weaker' months and this feature could be taken advantage of by planning ahead and emailing everyone who is signed up to the site with discount codes and general other offers that would help a salon during quieter periods.
+
+__The Footer & Attributions__
+
+![The footer and attributions](/documentation/footer.png)
+
+The footer very simply features a clickable Instagram icon that takes the user directly to the 'Balayage Expert London' Instagram profile page.
+* Opens in a new tab to help preserve the user's stay on the website for longer.
+* Gives users an easy way to access a gallery of sorts and opens up a way of communicating if interested in the services of the hairdresser.
+
+Note: larger screen sizes will also see the attribution link to the leaf vector used. This link is removed for smaller screens as the vector is not in use for them.
+
+## Structure: Shaping The Site
 
 __Navigation Bar__
 
@@ -78,9 +115,9 @@ __The Landing Page__
 ![The Landing Page](/documentation/am-i-responsive.png)
 
 The landing page is the first thing a user will see and thus has to have the highest impact. Some key things to consider here were:
-  * Less is more - lots of 'white space' - didn't want to overwhelm a first time visitor with too much information immediately
-    * I used contrasting colours to section off various areas to give a clear outline of the website.
-  * Clear hero image - Show the user what to likely expect from the website
+  * A call to action button - that sends the user to instagram and opens a new chat panel with the 'Balayage Expert London' account.
+  * Less is more - lots of 'white space' - didn't want to overwhelm a first time visitor with too much information immediately.
+  * Clear hero image - Show the user what to likely expect from the website.
     * And if that isn't 100% clear (which is possible!) then the user is greeted with the 'About' section right after.
 
 __The About Section__
@@ -114,49 +151,46 @@ Unfortunately this feature was taken out for smaller devices due smaller screen 
 
 ![Price list mobile view](/documentation/services-small-view.png)
 
-__The Blogs Page__
+## Skeleton: The View For The User
 
-![Blogs Page](/documentation/blogs.png)
+__Colour Palette__
 
-The blogs page currently includes 6 headings with various topics of interest. This page will likely be used many times by users to reference back to questions that they may have about their hair and other hair related topics. The page will grow to house many more blogs and users can be pointed towards the page for a more in depth answer to a question that they may have.
+![The colour palette](/documentation/colour-palette.png)
 
-In its current state the 'blogs' are unclickable and act as a sort of placeholder for future implementation. To not confuse current users with this a 'coming soon' text is implemented when their mouse hovers over the individual blog posts.
+The choice of colours is very important, as such, it should be the first aspect of the project you look into. Key points to consider when choosing the colour palette:
+* Warm tones - this works more harmoniously with natural looking hair, which is typically warm in tone.
+* Not identical colours to colours you would find in hair - some contrast between images used and overall colour scheme is important!
+* Colours found in the hair of the hero image on the landing page can be used as a starting place - but ultimately this chosen colour should be replaced to not match exactly.
 
-__The Sign Up Page__
+__Wireframes__
 
-![Sign Up!](/documentation/sign-up.png)
+![index.html wireframe](/documentation/wireframe1.png)
+![blogs.html wireframe](/documentation/wireframe2.png)
+![contact.html wireframe](/documentation/wireframe3.png)
 
-The sign up section is for users to be able to enter their details (name, surname and email address) in order for them to be contacted in future should there be any available offers and discounts coming up. The industry is known to have 'weaker' months and this feature could be taken advantage of by planning ahead and emailing everyone who is signed up to site with discount codes and general other offers that would help a salon during quieter periods.
+## Testing, Struggles and Future Features
 
-__The Footer & Attributions__
-
-![The footer and attributions](/documentation/footer.png)
-
-The footer very simply features a clickable Instagram icon that takes the user directly to my Instagram profile page. It open in a new tab as to preserve the user's stay on the website for longer.
-
-Larger screen sizes will also see the attribution link to the leaf vector used. This link is removed for smaller screens as the vector is not in use in them.
-
-### Features Left to Implement
-
-- A clickable 'Chat to me' button on the landing page; under the hero text - that opens a chat in Instagram and connects you directly to me.
-  - The same button made available for smaller screens - but overlapping the hero image.
-- Clickable blogs that take the user to another page with the desired blog and information.
-- An API for google reviews to automatically show up and scroll through on a dedicated space on the website.
-
-## Testing 
+__Testing__
 
 - What testing was done? Does it work?
 - How does it look and work on different browsers and screen sizes?
 - Mention bugs/problems.
 
-### Validator Testing 
+Validator Testing
 
 - HTML - No errors or warnings to show. Link to report [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdestant.github.io%2Fbalayage-expert-london%2F).
 - CSS - No errors found. Link to report [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdestant.github.io%2Fbalayage-expert-london%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
-### Unfixed Bugs
+__Bugs/Challenges__
 
 - Mention any unfixed bugs and why. Not understanding/not having enough time isn't an excuse!
+- Unfixed Bugs section maybe
+
+__Feature Ideas For The Future__
+
+- A carousel style price list that passes W3C validation - possibly through the use of JavaScript in the future (more [details](#testing) about the issue)
+- Clickable blogs that take the user to another page with the desired blog and information.
+- An API for google reviews to automatically show up and scroll through on a dedicated space on the website.
 
 ## Deployment
 
