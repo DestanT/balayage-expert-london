@@ -456,7 +456,10 @@ footer>div>p {
     }
 
     #hero-text~form>button {
-        visibility: hidden;
+        top: 40%;
+        right: 45%;
+        transform: translate(20%, 0);
+        font-size: 1.7em;
     }
 
     #burger-menu-checkbox {
@@ -575,6 +578,10 @@ footer>div>p {
         font-size: 45px;
     }
 
+    #hero-text~form>button {
+        top: 25%;
+    }
+
     .services-section {
         height: auto;
     }
@@ -628,6 +635,11 @@ footer>div>p {
         visibility: hidden;
     }
 
+    #hero-text~form>button {
+        top: 15%;
+        right: 40%;
+    }
+
     #profile-image {
         visibility: visible;
         position: relative;
@@ -666,9 +678,27 @@ footer>div>p {
     }
 }
 
+@media screen and (max-width: 425px) {
+    #hero-text~form>button {
+        top: 13%;
+        right: 38%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #hero-text~form>button {
+        top: 11.5%;
+    }
+}
+
 @media screen and (max-width: 320px) {
 
     .cards .card {
         width: 290px;
+    }
+
+    #hero-text~form>button {
+        top: 9.5%;
+        font-size: 1.2em;
     }
 }
