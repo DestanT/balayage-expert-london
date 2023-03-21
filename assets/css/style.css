@@ -24,7 +24,8 @@ body {
     background-color: #6A6058;
     color: #251E2D;
     font-family: 'Martel', serif;
-    overflow-x: hidden;
+    overflow: hidden;
+    
 }
 
 .center-text {
