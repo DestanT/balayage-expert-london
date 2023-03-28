@@ -20,9 +20,10 @@
     1. [Testing](#testing)
     2. [Bugs/Challenges](#bugschallenges)
     3. [Feature Ideas For The Future](#feature-ideas-for-the-future)
-6. [Deployment](#deployment)
-7. [Development](#development)
-8. [Credits](#credits)
+6. [Technologies Used](#technologies-used)
+7. [Deployment](#deployment)
+8. [Development](#development)
+9. [Credits](#credits)
     1. [Content](#content)
     2. [Media](#media)
 
@@ -226,6 +227,11 @@ As far as I know:
 * Clickable blogs - take the user to another page with the desired blog and information.
   * A search function to get to wanted topics faster.
 * An API for google reviews to automatically show up and scroll through on a dedicated space on the website.
+
+## Technologies Used
+
+* HTML
+* CSS
 
 ## Deployment
 
